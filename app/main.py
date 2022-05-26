@@ -11,13 +11,13 @@ from .routers import post, user, auth, vote
 app = FastAPI();
 
 # ********************* CORS *********************
-# origins = ["*"]
-origins = [
-    "https://www.google.com",
-    "https://localhost.tiangolo.com",
-    "http://localhost",
-    "http://localhost:8080",
-];
+origins = ["*"]
+# origins = [
+#     "https://www.google.com",
+#     "https://localhost.tiangolo.com",
+#     "http://localhost",
+#     "http://localhost:8080",
+# ];
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
